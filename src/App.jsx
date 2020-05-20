@@ -20,7 +20,7 @@ function App() {
             <h2 className="text-primary h4">React Form</h2>
             <Form form={form} name="form" onFinish={onFinish}>
               <div className="row">
-                <Form.Item className="form-group col-md-12 pt-5" name="title" rules={[{ required: true, message: 'Please select your country!' }]}>
+                <Form.Item className="form-group col-md-12 pt-5" name="title" rules={[{ required: true, message: 'Title is required!' }]}>
                   <Select className="p-0 title" placeholder="Title">
                     <Option value="Mr">Mr</Option>
                     <Option value="Mrs">Mrs</Option>
@@ -34,7 +34,7 @@ function App() {
                   <Input className="form-control" placeholder="Last Name" />
                 </FormItem>
                 <label className="col-md-4 col-form-label">Gender</label>
-                <FormItem className="form-group col-md-8" name="gender" rules={[{ required: true, message: 'Gender is required' }]}>
+                <FormItem className="form-group col-md-8" name="gender" rules={[{ required: true, message: 'Gender is required!' }]}>
                   <Radio.Group >
                     <Radio value={`Female`}>Female</Radio>
                     <Radio value={`Male`}>Male</Radio>
